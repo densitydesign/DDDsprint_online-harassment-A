@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<title>DataSprint - Online Harassment A</title>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="first-section">
+            <div id="title"> DataSprint</div>
+            <div id="subtitle">Mapping AI, </br>
+                Online Harassment </br>
+                and Online Polarization
+                </div>
+            <div id="logo-container">
+                <a href="https://densitydesign.org/"><img class="logo" src="assets/densitylogo.png" alt="Logo 1"></a>
+                <a href="https://www.polimi.it/"><img class="logo" src="assets/polilogo.png" alt="Logo 2"></a>
+            </div>
+        </div>
+        <div id="second-section" onmouseenter="enableScroll()" onmouseleave="disableScroll()">
+            <div id="right-title">Mapping Online Harassment</div>
+            <div id="text-content"> 
+                We investigated the intersection of Online Harassment and AI, addressing specific tools, prevalence, and accessibility. Our study also analyzed the language used in online harassment discussions, identifying prevalent words across platforms. We explored platforms with a higher concentration of such words and delved into specific communities fostering their extensive use. This comprehensive approach illuminates the multifaceted dimensions of Online Harassment and its connection to artificial intelligence and synthetic media.
+
+                <div id="right-small-title">Data Scraping</div>
+                <div id="text-small-content">
+                    The tools we used to scrape content online were mainly from <a href="https://console.apify.com/">Apify</a> and <a href="https://webscraper.io/">Webscraper.io</a>
+                    Scraping data from a generic “Online harassment” query we obtained: </br>
+
+                    <ul>
+                        <li>10.000 elements from Reddit</li>
+                        <li>650 elements from X (Twitter)</li>
+                        <li>270 elements from Tiktok</li>
+                        <li>100 elements from Threads</li>
+                        <li>2500 elements regarding AI tools from <a href="https://www.kaggle.com/datasets/muhammadtalhaawan/ai-5000-tools-2023?resource=download">Kaggle</a></li>
+                      </ul>  
+
+                </div>
+
+                <div id="right-small-title">Cleaning</div>
+                <div id="text-small-content">
+                    Reading every corpus, we deleted every non user generated content
+                    With <a href="https://colab.research.google.com/drive/1cDtP-hYE9FgK45iYraREqd-ZEop-dZld?usp=sharing#scrollTo=7bF9nhaaMAQ3">Google Colab NLP Toolkit</a>, removed stopwords. After transforming the file in a .docx we uploaded the file on <a href="https://www.laurenceanthony.net/software/antconc/">AntConc</a>
+                    The software finds the word before and after, counting and making groups (Trinomes) that were discarded in our process, focusing on single words and their density.
+                    Back to Colab, we did a lemmatization in order to make the wording.
+                </div>
+
+                Take a look at our  <a href="https://docs.google.com/spreadsheets/d/1ICf-rA0dBUfa3g6i4frTbvkoFpRWWvsY7Gq2NmOu5Yk/edit#gid=796095700">dataset →</a>
+
+            </div>
+          
+            <div id="right-title">AI Tools Exploration</div>
+            <div id="text-content">
+                Our initial undertaking involved a comprehensive mapping of the diverse array of AI tools available online, categorizing them based on their respective types, encompassing text, image, 3D video, audio, code, business, and other classifications. Subsequently, we extended our analysis to gauge the accessibility of these tools by delineating their pricing structures. 
+            </div>
+
+            <div class="flourish-embed flourish-survey" data-src="visualisation/16563907"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+            
+            <div id="right-title">Online Harassment Across Platforms: </br> Word Analysis</div>
+            <div id="text-content">
+                Following that, the mapping process began with an exploration of discussions regarding "online harassment" across Threads, TikTok, and Twitter. A systematic collection and analysis of all comments related to the topic were conducted, extracting the words utilized by individuals to articulate their perspectives. Subsequently, these words were visually represented in a graphic, their positions signifying prevalence on each platform. Words positioned at the center of the graphic indicated commonality across all three platforms, providing insights into the shared discourse surrounding online harassment.
+            </div>
+
+            <iframe width="80%" height="70%" src="https://ouestware.gitlab.io/retina/1.0.0-beta.1/#/embed/?url=https%3A%2F%2Fgist.githubusercontent.com%2Felisabettacomo%2F0f5b4e3a18071d14e5fe61c8a2b0eeef%2Fraw%2Fbe6aeeecff211164eddd96cb573fa8391bbfa7ca%2FCOLOR-2.graphml&sa=r&ca[]=wi-s&ca[]=wo-s&ca[]=wd-s" frameBorder="0" title="Retina" allowFullScreen></iframe>
+            <div id="right-title">Reddit's Take on Online Harassment</div>
+            <div id="text-content">
+                Next, a specific emphasis was directed towards the Reddit platform, conducting an extensive overview of the language employed in discussions about online harassment. Notably, our examination delved into presenting distinctive perspectives within each subreddit community addressing the topic. These communities showcase diverse viewpoints, often positioned in opposition, characterized by unique tones of voice and perceptions of the subject matter.
+            </div>
+            <div style="margin-left: 2vw;" class="f lourish-embed flourish-bubble-chart" data-src="visualisation/16580759"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+    
+            <div id="right-title">Reddit's Take on Online Harassment</div>
+            <div id="text-content">
+                Next, a specific emphasis was directed towards the Reddit platform, conducting an extensive overview of the language employed in discussions about online harassment. Notably, our examination delved into presenting distinctive perspectives within each subreddit community addressing the topic. These communities showcase diverse viewpoints, often positioned in opposition, characterized by unique tones of voice and perceptions of the subject matter.
+            </div>
+            <iframe width="80%" height="80%" src="https://ouestware.gitlab.io/retina/1.0.0-beta.1/#/embed/?url=https%3A%2F%2Fgist.githubusercontent.com%2Felisabettacomo%2Fb59492190d1b80f244227eddf07f8480%2Fraw%2Fed249b99247f95709818faf543efdfee02b5ca34%2FCOMMUN-NET.graphml&r=v&sa[]=ge&sa[]=gp&sa[]=r&ca[]=m-s&ca[]=gu-s&nr=0.872&er=0.232&lt=0.915&ls=13" frameBorder="0" title="Retina" allowFullScreen></iframe>
+            <div id="right-title">Evolution of keywords</div>
+            <div id="text-content">
+                Next, a specific emphasis was directed towards the Reddit platform, conducting an extensive overview of the language employed in discussions about online harassment. Notably, our examination delved into presenting distinctive perspectives within each subreddit community addressing the topic. These communities showcase diverse viewpoints, often positioned in opposition, characterized by unique tones of voice and perceptions of the subject matter.
+            </div>   
+            <div class="flourish-embed flourish-chart" data-src="visualisation/16586172"><script src="https://public.flourish.studio/resources/embed.js"></script></div> 
+            </div>
+        </div>           
+    </div>
+
+    <script>
+        function enableScroll() {
+            document.getElementById('second-section').style.overflow = 'auto';
+        }
+
+        function disableScroll() {
+            document.getElementById('second-section').style.overflow = 'hidden';
+        }
+    </script>
+</body>
+</html>
