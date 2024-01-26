@@ -32,7 +32,7 @@
         #second-section {
             width: 70vw;
             background-color: #ffffff;
-            overflow: hidden;
+
             padding: 2vw;
             box-sizing: border-box;
         }
@@ -72,7 +72,7 @@
         #right-title {
             font-size: 2.1vw;
             font-weight: bold;
-            margin-top: 1vw;
+            margin-top: 5vw;
             margin-left: 3vw;
             font-family: 'PT Serif', serif;
             text-decoration: underline;
@@ -82,7 +82,16 @@
             font-size: 1.5vw;
             font-weight: bold;
             margin-top: 3vw;
-            margin-left: 3vw;
+            margin-left: 0vw;
+            font-family: 'PT Serif', serif;
+        }
+
+        #right-small-title-keyfindings {
+            font-size: 1.5vw;
+            font-weight: bold;
+            margin-top: 3vw;
+            margin-left: 0vw;
+            margin-bottom: 3vw;
             font-family: 'PT Serif', serif;
         }
 
@@ -107,3 +116,76 @@
             font-family: 'DM Sans', sans-serif;
 
         }
+
+        .image-text-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .text-content {
+            width: 60%;
+            padding-right:8vw;
+            box-sizing: border-box;
+        }
+
+        .image-content {
+            width: 20vw;
+            padding-left:2vw;
+            height: auto;
+            margin-bottom: -3vw;
+            margin-top: 1vw;
+
+        }
+
+        .image-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-content:hover img {
+            transform: scale(1.8);
+        }
+
+
+        #keyfindings-small-title {
+            font-size: 1.5vw;
+            font-weight: bold;
+            font-family: 'PT Serif', serif;
+        }
+
+            #text-small-content-keyfindings {
+            font-size: 1.3vw;
+            color: #333;
+            margin-right: 2.5vw;
+            margin-top: 1.5vw;
+            margin-bottom: 3vw;
+            margin-left: 3vw;
+            font-family: 'DM Sans', sans-serif;
+            width: 80vw;
+
+        }
+
+       
+      
+        .img_producto_container {
+            width: auto;
+            height: 48vh;
+            position: relative;
+            overflow: hidden;
+            cursor: zoom-in;
+          }
+          .img_producto {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transition: transform 0.5s ease-out;
+          }
+          
